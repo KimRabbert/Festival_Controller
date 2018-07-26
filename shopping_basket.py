@@ -26,6 +26,10 @@ class Window(QtGui.QMainWindow):
             btn = QtGui.QPushButton(i, self)
             btn.resize (250, 50)
             btn.move(50,y)
+            label = QtGui.QLabel(self)
+            label.setText(i)
+            label.resize(250, 50)
+            label.move(350,y)
             y = y + 100
 
         self.show()
